@@ -1,4 +1,4 @@
-let fName = prompt("what is your first name")
+let fName = prompt("what is your first name").toLowerCase()
 
 alert("hey, wlecome to my website " + fName )
 
@@ -6,11 +6,11 @@ function sports (){
 
 
 
-let favSport = prompt("What is your favorite Sport? Please choose one of these 1- Soccer ,2- Basketball ,3- Tennis")
+let favSport = prompt("What is your favorite Sport? Please choose one of these 1- Soccer ,2- Basketball ,3- Tennis").toLowerCase()
 
-while( favSport != "Soccer" && favSport != "Basketball" && favSport != "Tennis" )
+while( favSport != "soccer" && favSport != "basketball" && favSport != "tennis" )
 {
-  favSport = prompt("What is your favorite Sport? Please choose one of these 1- Soccer ,2- Basketball ,3- Tennis")
+  favSport = prompt("What is your favorite Sport? Please choose one of these 1- Soccer ,2- Basketball ,3- Tennis").toLowerCase()
 }
 
 let NumberOfPicture = prompt("How many times do you want to see pictures of your favorite sport")
@@ -23,7 +23,7 @@ while(NumberOfPicture > 10)
 //var favSport = prompt("What is the sport you like to do?")
 
 
-if(favSport == "Soccer"){
+if(favSport == "soccer"){
   for( var i = 1 ; i <= NumberOfPicture ; i++)
 {
 document.write(
@@ -32,7 +32,7 @@ document.write(
 }
 }
 
-else if (favSport =="Basketball"){
+else if (favSport =="basketball"){
   for( var i = 1 ; i <= NumberOfPicture ; i++)
 {
 document.write(
@@ -41,7 +41,7 @@ document.write(
 }
 }
 
-else if(favSport =="Tennis"){
+else if(favSport =="tennis"){
   for( var i = 1 ; i <= NumberOfPicture ; i++)
 {
 document.write(
